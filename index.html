@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trymodel 上新：Claude Fable 5.1 / Opus·Sonnet·Haiku 5.5、DeepSeek V4.1 Flash、Grok 4.7 怎么选怎么用</title>
+<meta name="description" content=" 最近 Trymodel 把模型广场里的 Claude、DeepSeek、Grok 按官方最新线梳理了一遍：展示名对齐、排序把新款顶到前面，并单独挂出 Claude Fable 5.1。一个站里就能切换多家前沿模型聊天，不用到处开会员、换网页。 本文介绍这次上了哪些新模型、各自适合干什么，以及在 Trymodel 里怎">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5f0;--card:#fff;--text:#1a1a1a;--muted:#5c5c5c;--accent:#1a73e8;--border:#e6e2d8;--code-bg:#f0eee8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;font-size:17px;line-height:1.85;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+article{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2rem 1.75rem 2.5rem;box-shadow:0 8px 30px rgba(0,0,0,.04)}
+h1{font-family:"Noto Serif SC",serif;font-size:clamp(1.55rem,4vw,2rem);line-height:1.4;margin:0 0 1.25rem;font-weight:700}
+h2{font-family:"Noto Serif SC",serif;font-size:1.35rem;margin:2.25rem 0 .9rem;padding-top:.5rem;border-top:1px solid var(--border);font-weight:700}
+h2:first-of-type{border-top:none;padding-top:0}h3{font-size:1.1rem;margin:1.5rem 0 .6rem}
+p{margin:.9rem 0}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+ul,ol{padding-left:1.35rem;margin:.8rem 0}li{margin:.35rem 0}strong{font-weight:700}
+img{display:block;max-width:100%;height:auto;margin:1.1rem auto .35rem;border-radius:10px;border:1px solid var(--border);background:#fafafa}
+pre{background:var(--code-bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.1rem;overflow-x:auto;font-size:.88rem;line-height:1.55}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background:var(--code-bg);padding:.1em .35em;border-radius:4px}
+pre code{background:none;padding:0}
+blockquote{margin:1rem 0;padding:.2rem 0 .2rem 1rem;border-left:3px solid var(--accent);color:var(--muted)}
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.95rem}
+th,td{border:1px solid var(--border);padding:.55rem .7rem;text-align:left;vertical-align:top}th{background:#f3f1eb}
+.meta{color:var(--muted);font-size:.92rem;margin-bottom:1.5rem}
+.pages-banner{margin:0 0 1.25rem;padding:.75rem 1rem;background:#eef5ff;border:1px solid #d0e2ff;border-radius:10px;font-size:.95rem}
+footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border);color:var(--muted);font-size:.88rem}
+</style></head><body><div class="wrap"><article>
+<div class="pages-banner">在线阅读（GitHub Pages）：<a href="https://maynor996.github.io/trymodel-fable-5-1-launch/">https://maynor996.github.io/trymodel-fable-5-1-launch/</a></div>
+<h1>Trymodel 上新：Claude Fable 5.1 / Opus·Sonnet·Haiku 5.5、DeepSeek V4.1 Flash、Grok 4.7 怎么选怎么用</h1>
+<div class="meta">原文：<a href="https://blog.csdn.net/xianyu120/article/details/168650365">https://blog.csdn.net/xianyu120/article/details/168650365</a></div>
+<p><img alt="" src="imgs/01.jpg" /><br />
+<img alt="" src="imgs/02.jpg" /><br />
+<img alt="" src="imgs/03.png" /><br />
+<img alt="" src="imgs/04.png" /></p>
+<p>最近 <a href="https://trymodel.chat/">Trymodel</a> 把模型广场里的 <strong>Claude、DeepSeek、Grok</strong> 按官方最新线梳理了一遍：展示名对齐、排序把新款顶到前面，并单独挂出 <strong>Claude Fable 5.1</strong>。一个站里就能切换多家前沿模型聊天，不用到处开会员、换网页。</p>
+<p>本文介绍这次上了哪些新模型、各自适合干什么，以及在 Trymodel 里怎么快速上手。</p>
+<h2>这次上新了什么</h2>
+<h3>Claude（Anthropic）</h3>
+<p>当前推荐优先看这四档（新 → 旧）：</p>
+<table>
+<thead>
+<tr>
+<th>展示名</th>
+<th>大致定位</th>
+<th>适合场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Claude Fable 5.1</strong></td>
+<td>最重推理、长链路 Agent</td>
+<td>难题目、长跑 coding / 研究、对 Opus 5.5 仍不够时</td>
+</tr>
+<tr>
+<td><strong>Claude Opus 5.5</strong></td>
+<td>主力 Agent 编码与知识工作</td>
+<td>日常复杂开发、改仓库、写长文档</td>
+</tr>
+<tr>
+<td><strong>Claude Sonnet 5.5</strong></td>
+<td>速度与智能的平衡</td>
+<td>日常问答、改代码、写文案</td>
+</tr>
+<tr>
+<td><strong>Claude Haiku 5.5</strong></td>
+<td>最快最省的小模型</td>
+<td>分类、抽取、高频短对话</td>
+</tr>
+</tbody>
+</table>
+<p>线上也还保留 Fable 5、Sonnet 5、Haiku 4.5、Opus 4.x 等旧款，方便对照或兼容旧提示词。</p>
+<h3>DeepSeek</h3>
+<table>
+<thead>
+<tr>
+<th>展示名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DeepSeek V4.1 Flash</strong></td>
+<td>目前主推的新架构小旗舰：更快、更省，原生多模态能力更强，官方也在把流量往这条线收</td>
+</tr>
+<tr>
+<td><strong>DeepSeek V4 Pro</strong></td>
+<td>仍可用的上一代 Pro，重推理时可对比试试</td>
+</tr>
+<tr>
+<td><strong>DeepSeek V4 Flash</strong></td>
+<td>免费 / 试用友好的一条线（站点默认会落到这条），适合先随便聊</td>
+</tr>
+</tbody>
+</table>
+<h3>Grok（xAI）</h3>
+<table>
+<thead>
+<tr>
+<th>展示名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Grok 4.7</strong></td>
+<td>当前官方旗舰：编码与知识工作更稳，长任务更愿意把事做完</td>
+</tr>
+<tr>
+<td>Grok 4.6 / 4.5 / 4</td>
+<td>保留对照；<strong>Grok 4.8 尚未正式上线</strong>，这次没有硬塞假型号</td>
+</tr>
+</tbody>
+</table>
+<p>下拉里现在按 <strong>4.7 → 4.6 → 4.5 → 4</strong> 排，打开就能先看到最新款。</p>
+<h2>怎么在 Trymodel 里用</h2>
+<ol>
+<li>打开 <a href="https://trymodel.chat/">https://trymodel.chat/</a></li>
+<li>点输入框上方的 <strong>模型选择</strong>（例如当前显示的 Gemini / DeepSeek 等名字）</li>
+<li>在搜索框输入 <code>Claude</code>、<code>DeepSeek</code> 或 <code>Grok</code></li>
+<li>选中例如 <strong>Claude Fable 5.1</strong>、<strong>Claude Sonnet 5.5</strong>、<strong>DeepSeek V4.1 Flash</strong>、<strong>Grok 4.7</strong></li>
+<li>直接发问题或贴代码；需要联网检索时，支持联网的模型会按站点能力走搜索工具</li>
+</ol>
+<p>小提示：</p>
+<ul>
+<li>若刚更新后列表还是旧的，<strong>硬刷新</strong>页面（或清一下浏览器里 <code>trymodel-model-catalog</code> 缓存）再开下拉。</li>
+<li>部分高阶型号（如 Fable 5.1、Opus 5.5、Grok 4.7）可能需要登录 / Pro，免费档仍可用 Haiku、部分 Flash 等先体验。</li>
+<li>想固定默认模型：在账号设置里选好默认，再开新对话即可。</li>
+</ul>
+<h2>怎么选：一句话对照</h2>
+<ul>
+<li><strong>要最强推理 / 长 Agent</strong>：Claude Fable 5.1，其次 Claude Opus 5.5  </li>
+<li><strong>要又快又稳的日常编码</strong>：Claude Sonnet 5.5 或 Grok 4.7  </li>
+<li><strong>要便宜高频</strong>：Claude Haiku 5.5 或 DeepSeek V4.1 Flash / V4 Flash  </li>
+<li><strong>要国产开源向、性价比</strong>：优先 DeepSeek V4.1 Flash，难任务再对比 V4 Pro  </li>
+</ul>
+<p>同一道题丢给两三个模型并排试，往往比纠结「哪个绝对最强」更管用——这也是 Trymodel 把多家模型放在一个聊天框里的意义。</p>
+<h2>写在最后</h2>
+<p>模型迭代很快，Trymodel 这边会持续把 <strong>展示名、排序和上游 ID</strong> 对齐官方最新线，避免列表里还停在半代旧名。欢迎打开 <a href="https://trymodel.chat/">trymodel.chat</a> 搜一下 <code>Fable</code>、<code>Sonnet 5.5</code>、<code>V4.1</code>、<code>Grok 4.7</code>，亲手试一轮。</p>
+<p>有想看的对比（例如 Fable 5.1 vs Opus 5.5 写同一段重构、Grok 4.7 vs Sonnet 5.5 刷题）可以留言，我按场景再补一篇实测。</p>
+<footer>镜像自 CSDN @xianyu120 · 内容以原文为准</footer>
+</article></div></body></html>
